@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+ZABBIX
+{% endblock %}
+
+{% block content %}
+
+<form action="{% url 'zabbix:Q_host' %}" method="post">
+	{% csrf_token %}
+	<p>Query host id <input type="text" name="id" /></p>
+	<input type="submit" value="query" />
+</form>
+
+{% endblock %}

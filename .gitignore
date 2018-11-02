@@ -1,0 +1,6 @@
+##ignore this file##
+
+*.privacy
+*.pyc
+*.egg-info
+__pycache__
